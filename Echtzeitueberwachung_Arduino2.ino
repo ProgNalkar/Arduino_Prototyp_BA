@@ -32,8 +32,8 @@ Adafruit_NeoPixel pixels(NUMPIXELS, PIN, NEO_GRB + NEO_KHZ800);
 //Variablen Definition
 
 
-char phonenumber[16] = {'0', '0', '4', '9', '1', '5', '2', '2', '8', '5', '9', '7', '2', '1', '5'};     //Sven
-//char phonenumber[16] = {'0', '0', '4', '9', '1', '7', '6', '4', '3', '6', '2', '6', '6', '4', '8'};   //Stefan
+char phonenumber[16] = {'', '', '', '', '', '', '', '', '', '', '', '', '', '', ''};     
+//char phonenumber[16] = {'', '', '', '', '', '', '', '', '', '', '', '', '', '', ''};   
 bool smsbat = false;              //Variable für einmaliges versenden der SMS
 bool smstemp = false;             //Variable für einmaliges versenden der SMS
 bool smsHasFallen = false;        //Ändert sich nach jedem Fall wieder auf false und setzt die Anzahl der Fälle hoch
@@ -42,7 +42,7 @@ uint8_t smsnumber = 1;            //Start der SMS Nummer zum Auslesen
 uint16_t batP;                    //Akkustand
 uint8_t humidity;                    //Luftfeuchtigkeit
 float latitude, longitude, temperature;
-String baseurl = "http://api.thingspeak.com/update.json?api_key=IHABNRQCKB0X7Y2I&";     //Deklaration Datahoster & API Key
+String baseurl = "http://api.thingspeak.com/update.json?api_key=*****************";     //Deklaration Datahoster & API Key
 uint16_t FreeFallTime = 0;        // Counter für die Zählung der kontinuierlichen Fälle
 uint16_t NumTempCounter = 0;      //Anzahl der Temperaturüberschreitungen
 float xa;                         //Normalisierter Vektor Accelerometer X-Achse
